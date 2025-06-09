@@ -1,0 +1,7 @@
+hudanimations_manifest
+{
+  // Higher on the list takes priority.
+  "file"    "scripts/hudanimations.txt" // these are from the internal vpks
+	"file"		"scripts/hudanimations_stabby.txt" // custom stabby hud animations
+  "file"		"scripts/hudanimations_tf.txt" // these are from the internal vpks
+}

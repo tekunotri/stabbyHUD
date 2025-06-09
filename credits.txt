@@ -1,0 +1,11 @@
+Thank you to everyone who has contribued to this HUD, big and small!
+
+Flame - original inspiration with FlameHUD
+2c3c
+k0bb - long time maintainence/updates
+zeldanerd7 - minor edits
+xanderqixter - minor edits
+KatenGaas - minor edits
+Kris18 - fixing HUD after matchmaking, maintaining through Jungle Inferno and beyond; streamer mode; misc additions and fixes
+sAvin - minor edits
+Pum - "Squares" font for killfeed

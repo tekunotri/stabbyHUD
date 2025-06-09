@@ -1,0 +1,72 @@
+event HudTournament_AnimateTeams_Out
+{
+	Animate RedTeamPanel xpos r-5 Accel 0 0.68
+	Animate BlueTeamPanel xpos -155 Accel 0 0.68
+	
+  // No names pls
+	Animate BlueTeamPanel ypos_minmode 8888 Linear 0 0 // added to hide names
+	Animate RedTeamPanel ypos_minmode 8888 Linear 0 0 // added to hide names
+}
+
+event HudTournament_AnimateTeams_In
+{
+	Animate RedTeamPanel xpos c150 Accel 0 0.25
+	Animate BlueTeamPanel xpos c-300 Accel 0 0.25
+	
+	// No names pls
+  Animate BlueTeamPanel ypos_minmode 8888 Linear 0 0 // added to hide names
+	Animate RedTeamPanel ypos_minmode 8888 Linear 0 0 // added to hide names
+}
+
+event HudTournament_DoorsClose
+{
+	StopEvent HudTournament_ResetTimer 0
+
+	SetVisible CountdownBG  0 5
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+
+	Animate CountdownLabel ypos c-5 Gain 0.75 0 0.4
+	Animate CountdownLabelShadow ypos c-2 Gain 0.75 0 0.4
+	
+	// No names pls
+	Animate BlueTeamPanel ypos_minmode 8888 Linear 0 0
+	Animate RedTeamPanel ypos_minmode 8888 Linear 0 0
+
+	SetVisible	MatchStartingBG	1	0
+	SetVisible	BlueTeamPanel	1	0
+	SetVisible	RedTeamPanel	1	0
+
+	SetVisible	HudTournamentBG 0	2
+	SetVisible	TournamentConditionLabel 0 2
+	RunEventChild MatchStartingBG PlayDoorCloseAnim 0
+	RunEventChild FrontParticlePanel PlayDoorSlamParticles 0.45
+	RunEventChild MatchStartingBG PlayDoorOpenAnim 7
+
+	RunEvent HudTournament_AnimateTeams_In 0.25
+	RunEvent HudTournament_AnimateTeams_Out 7.70
+
+	SetVisible MatchStartingBG	0 9
+	SetVisible CountdownLabel 0 9.9
+	SetVisible CountdownLabelShadow 0 9.9
+
+	RunEvent HudTournament_DoorsCleanup 10
+	
+	SetVisible CountdownBG 1 11
+}
+
+event HudMatchSummary_SlideInPanels
+{
+	//Animate BlueTeamPanel ypos_minmode 8888 Linear 0 0
+	//Animate RedTeamPanel ypos_minmode 8888 Linear 0 0
+	
+	Animate BlueTeamPanel xpos 0 Accel 0.25 0.25
+	Animate RedTeamPanel xpos 0 Accel 0.25 0.25
+}
+
+event CompetitiveGame_ShowPvPRankPanel
+{
+	Animate RankPanel ypos r0 Linear 0 0
+	Animate RankPanel ypos r285 Bias 0.90 0.2 0.3
+	RunEventChild RankPanel PvPRankPanelShowXPChange 0
+}

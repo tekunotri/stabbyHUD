@@ -1,0 +1,56 @@
+lol it's never too late to start a changelog, right?
+
+v2.8.8a
+- Forgot to resize ammo when there is no clip. It's a separate element from ammo in clip, and ammo in reserve
+- Realigned the "resume", "find a game", and "disconnect" button texts
+- Changed "find a game"'s background to no longer be an eyesore (changed from tan to green)
+
+v2.8.8
+- Fixed a typo that made RED's scoreboard censor bar 2% wider than BLU's in streamer mode
+- Repositioned scoreboard censor bars to accommodate new HUD scaling functionality
+- Fixed sizing on health and ammo in clip to accommodate new HUD scaling functionality
+- Added backstabs back to the scoreboard
+- Realigned scoreboard stats to be consistent across all three columns (let me know if damage easily grows too large and overlaps its label!)
+
+v2.8.7a
+- Resized scoreboard censor bars on streamer mode to reveal friend icon
+
+v2.8.7
+- Removed weapon names from disguises on streamer mode
+- Resized scoreboard censor bars on streamer mode
+- Removed lingering spectator control instructions/text with streamer mode disabled
+- Fixed team composition preview on class select
+- Health no longer truncates on some 5-digit values and can now handle obscene values, just in case
+- Fixed crit counter for Diamondback, Frontier Justice, Manmelter truncating 2-digit values
+- Changed killstreak counter color and crit counter for Diamondback, Frontier Justice, Manmelter color from off-white to white to better fit theme
+
+v2.8.6
+- Changed killfeed to show team-colored boxes as "censoring" for names in streamer mode
+- Adjusted targetID and secondary targetID up slightly to not overlap the top item effect meter and look more aesthetically pleasing
+
+v2.8.5
+- Fixed floating health numbers being cut off
+- Fixed Huntsman having two charge meters
+- Moved Loose Cannon, Stickybomb Launcher, and Huntsman charge meters to be in line with other classes'
+- Fixed item effect meters being slightly off center, and the quarter markers being slightly off as well
+- Slightly repositioned the Man Melter and Frontier Justice crit counters for better spacing
+- Correctly repositioned shadow for killstreak counter
+- Slightly repositioned heads counter to be in line with killstreak counter
+- Moved ubercharge meter to center of screen for visibility
+- Restylized the Vaccinator charges similar to other meters
+- Moved secondary targetID (healing/healer) up to accommodate Medic's ubercharge meter move and other existing item effect meters
+- Moved Organs count to be beside killstreak, below ammo
+- Please don't ask about the Phlog. I still have no idea why it's off to the side.
+
+v2.8.4
+- Removed the shadow for "Select a Class".
+- Adjusted scoreboard HUD from "minmode" sizing to full sizing for 24 player servers.
+
+v2.8.3
+- Removed avatars for your party on mainmenu while in Streamer Mode.
+- Removed player avatars from the killcam while in Streamer Mode.
+- Removed the match summary which reveals all players in server (and their stats) while in Streamer Mode.
+- Made notifications (such as gifted items) invisible while in Streamer Mode. [Untested]
+  (Edit with v2.8.4: Broken; they still show up)
+- Fixed the notifications button overlapping view streams button on the main menu.
+- Fixed the line of buttons on the bottom of the mainmenu not working.
